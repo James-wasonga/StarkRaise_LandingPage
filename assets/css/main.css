@@ -103,7 +103,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: hsl(271, 83%, 48%);
   color: #ffffff;
   text-align: left;
   padding: 15px;
