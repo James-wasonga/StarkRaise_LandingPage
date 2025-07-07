@@ -232,7 +232,7 @@
         
         <div class="contact-form fade-in">
           <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="">
+            <input type="hidden" name="access_key" value="300eaf81-511c-4cd5-b279-83a6fdc40c4d">
             <div class="form-group">
               <label for="name">Your Name</label>
               <input type="text" id="name" name="name" required>
@@ -308,6 +308,17 @@
       faders.forEach(fader => {
         appearOnScroll.observe(fader);
       });
+    });
+    
+    //NEW: add a form reset script
+    const form = document.querySelector('.contact-form form');
+
+    form.addEventListener('submit', function(e) {
+      // Prevent immediate form reset to allow submission
+      setTimeout(() => {
+        form.reset();               // Clear input fields
+        location.reload();          // Reload the page
+      }, 1000); // delay to ensure the form submits before clearing
     });
   </script>
 </body>
