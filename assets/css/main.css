@@ -24,6 +24,21 @@
       overflow-x: hidden;
     }
 
+    
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      overflow: hidden;
+    }
+    
+    
+
     /* Animated background */
     .bg-animation {
       position: fixed;
@@ -763,18 +778,12 @@
     }
 
 
-    /* Shrink logo on small screens */
-/* @media (max-width: 400px) {
-  .hero-logo-bg {
-    width: 70vw;
-    opacity: 0.1;
-    filter: blur(2px);
-  }
-} */
+    @media (max-width: 768px) {
+      .cta-button {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+    
 
 
-/* Ensure hero container is z-index-aware */
-/* .hero {
-  position: relative;
-  z-index: 1;
-} */
