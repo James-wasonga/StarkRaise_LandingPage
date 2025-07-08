@@ -784,6 +784,33 @@
         font-size: 0.9rem;
       }
     }
+
+    @media (max-width: 600px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem; /* or whatever spacing feels right */
+      }
+    }
     
+    
+    /* @media (max-width: 768px) {
+      .logo {
+        font-size: 1.2rem;
+      }
+    
+      .logo-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+      }
+    } */
 
 
+    
